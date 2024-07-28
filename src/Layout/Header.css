@@ -1,0 +1,18 @@
+.header__All{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+
+}
+.header__Right,.header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    a{
+        text-decoration: none;
+        font-size: 21px;
+        color: black;
+    }
+}

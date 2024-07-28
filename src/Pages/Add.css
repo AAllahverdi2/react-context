@@ -1,0 +1,29 @@
+.all__Form{
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+}
+
+.name__box, .title__box, .country__box,.city__box{
+    display: flex;
+    justify-content: center;align-items: center;
+    height: 40px;
+    gap: 20px;
+padding-left: 30px;
+    input{
+        width: 450px;
+       
+    }
+   
+}
+
+.inp__div{
+    /* border: 5px solid red; */
+}
+label{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: bold;
+}
