@@ -30,7 +30,16 @@ const AddCustomers = () => {
 
         }),
         onSubmit: values => {
-            axios.post("https://northwind.vercel.app/api/customers",values).then(res=>{
+
+            const customer = {
+                companyName: values.companyName,
+                contactTitle: values.contactTitle,
+                address:   {
+                    city: values.city,
+                    country: values.country,
+            }
+            }
+            axios.post("https://northwind.vercel.app/api/customers",customer).then(res=>{
                 setData([...data,res.data])
                 setSearch([...search,res.data])
             })
